@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "code-prompt-builder"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Nicholas King", email="nick@celetris.com" },
 ]
@@ -16,12 +16,12 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "nbformat"
+]
 
 [project.urls]
 "Homepage" = "https://github.com/nking-1/code-prompt-builder"  
 
-[tool.setuptools.packages.find]
-where = ["code_prompt_builder"]
-
-[tool.setuptools.install_requires]
-nbformat = "*"
+[tool.setuptools]
+packages = ["code_prompt_builder"]
